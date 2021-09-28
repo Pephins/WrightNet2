@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7200ef"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/piki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/images" />
+
+    <LinearLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:textColorHint="#ffffff"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6C6C6C" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/up1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:textColorHint="#ffffff"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="142dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="5dp"
+            android:text="Job Description :"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="87dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FBFBFB"
+            android:entries="@array/artisan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/up2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:textColorHint="#ffffff"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="84dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="5dp"
+            android:text="Gender :"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="87dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FBFBFB"
+            android:entries="@array/gender" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:textColorHint="#ffffff"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="#ffffff"
+            android:backgroundTintMode="add"
+            android:text="Register" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
